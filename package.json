@@ -1,0 +1,26 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "",
+  "packageManager": "pnpm@7.27.0",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "clear": "rimraf 'packages/*/{node_modules}' && rimraf node_modules",
+    "build": "pnpm --filter=@console/* run build",
+    "release": "pnpm build && pnpm release:only",
+    "release:only": "pnpx changeset publish --registry=https://registry.npmjs.com/",
+    "version": "pnpx changeset version"
+  },
+  "keywords": [],
+  "author": {
+    "email": "zhangjing1024798@gmail.com",
+    "name": "zhangjing"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@types/node": "^18.13.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1"
+  }
+}
