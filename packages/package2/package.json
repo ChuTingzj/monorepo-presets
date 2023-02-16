@@ -1,12 +1,12 @@
 {
-  "name": "@consolezj/package1",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "preinstall": "npx only-allow pnpm"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "@consolezj/package2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"preinstall": "pnpx only-allow pnpm"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }
